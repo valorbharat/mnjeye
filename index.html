@@ -76,7 +76,11 @@
 
   .about { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
   .about p { margin: 0 0 14px; }
-  .about img { width: 100%; border: 6px solid #fff; box-shadow: 0 2px 14px rgba(15, 36, 66, .15); }
+  .about h3 { font-family: Merriweather, Georgia, serif; font-size: 18px; color: var(--navy); margin: 26px 0 8px; }
+  .about .clinics { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .about .clinics li { background: var(--sky); border-left: 4px solid var(--saffron); padding: 6px 14px; font-weight: 600; color: var(--navy); }
+  .about { align-items: start; }
+  .about img { position: sticky; top: 72px; width: 100%; border: 6px solid #fff; box-shadow: 0 2px 14px rgba(15, 36, 66, .15); }
 
   .services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); background: #fff; }
   .services li { padding: 18px 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -162,8 +166,23 @@
     <div class="wrap about">
       <div>
         <h2 class="title">About the institute</h2>
-        <p>M &amp; J Western Regional Institute of Ophthalmology, Ahmedabad is a government eye hospital located in the Manjushree Mill Compound at Asarwa.</p>
-        <p>Add a short history of the institute, its affiliation and its role in the region here.</p>
+        <p>The M &amp; J Western Regional Institute of Ophthalmology is a highly reputed, government-run public apex eye hospital. As a premier regional institute for ophthalmic care, it serves a large volume of patients across Western India, offering both free and highly subsidized advanced medical services.</p>
+
+        <h3>Specialties &amp; services</h3>
+        <p>The institute provides comprehensive diagnostics, advanced treatments and specialized surgeries. Key specialty clinics within the institute include:</p>
+        <ul class="clinics">
+          <li>Glaucoma</li>
+          <li>Vitreous and Retina</li>
+          <li>Squint &amp; Pediatric Ophthalmology</li>
+          <li>Oculoplasty</li>
+          <li>Refractive Surgery</li>
+        </ul>
+
+        <h3>Scheme benefits</h3>
+        <p>The hospital is an empanelled facility under the Ayushman Bharat PM-JAY scheme, ensuring accessible quality healthcare for eligible sections of society.</p>
+
+        <h3>Operational hours</h3>
+        <p>The emergency and general departments are open 24 hours, Monday through Sunday.</p>
       </div>
       <img src="webfoto/hospital-front-1.jpeg" alt="Front view of the hospital building" width="1280" height="402">
     </div>
